@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiwari's Shield & Shine - Home</title>
+    
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+   
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #003366; /* Navy Blue */
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .logo img {
+            width: 60px;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Accent Color */
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #003366; /* Navy Blue */
+            height: 60vh;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        /* Image Gallery */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: auto;
+            margin: 0 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button Styles */
+        .button {
+            padding: 12px 30px;
+            background-color: #ffcc00;
+            color: #003366;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff9900; /* Hover effect */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Tiwari's Shield & Shine Logo">
+            <h2>Tiwari's Shield & Shine</h2>  
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+
+
+        
+
+       
+    
+    
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Tiwari's Shield & Shine</h1>
+            <p><b>Your Trusted Partner in Home Cleaning & Maintenance</b></p>
+            <p><i>Where Safety Meets Spotlessness</i></p>
+        </div>
+    </section>
+
+    <div class="image-container">
+        <img src="images\home-cleaning 1.jpg" alt="Home Cleaning" width="200">
+        <img src="images/home cleaning 2.jpg" alt="Home Cleaning" width="200">
+        <img src="images/home cleaning 3.jpg" alt="Home Cleaning" width="200">
+        
+    </div>
+
+    <div style="text-align: center;">
+        <a href="services.html" class="button">Explore Our Services</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tiwari's Shield & Shine. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Trigger a welcome message when the widget is loaded
+Tawk_API = Tawk_API || {};
+Tawk_API.onLoad = function() {
+    Tawk_API.addEvent('onStatusChange', function(status){
+        if(status === 'online') {
+            Tawk_API.popup();
+            Tawk_API.setAttributes({
+                'message': 'Hello! How can we assist you today?'
+            }, function(error){});
+        }
+    });
+};
+
+// Trigger a proactive message after a visitor has spent 30 seconds on the "Services" page
+window.setTimeout(function() {
+    if (window.location.pathname === "/services") {
+        Tawk_API.popup();
+        Tawk_API.setAttributes({
+            'message': 'Need more details about our housekeeping services?'
+        }, function(error){});
+    }
+}, 30000);
+
+    </script>
+
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/66f2b7284cbc4814f7ddec29/1i8i1mu6e'; // Replace this with your Tawk.to widget URL
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    
+        // Code to handle offline status
+        Tawk_API = Tawk_API || {};
+        Tawk_API.onStatusChange = function(status) {
+            if (status === 'offline') {
+                Tawk_API.setAttributes({
+                    'message': 'We are currently offline, but you can leave your email, and we will contact you as soon as possible.'
+                }, function(error) {});
+            }
+        };
+    </script>
+    
+</body>
+</html>

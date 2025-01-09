@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero-text button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hero-text button:hover {
+    background-color: #45a049;
+}
+
+.services-overview, .service-details, .about-us, .contact-us, .booking-form {
+    padding: 20px;
+    text-align: center;
+}
+
+.services-overview h2, .service-details h2, .about-us h2, .contact-us h2, .booking-form h2 {
+    margin-bottom: 20px;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .service-item img {
+        max-width: 100%;
+    }
+
+    .hero-text button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+
+/* Example styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+    float: left;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.service-details {
+    margin: 20px; /* Add margins to the section */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.service-details h2,
+.service-details h3,
+.service-details h4 {
+    text-align: left; /* Ensure headings are left-aligned */
+}
+
+.service-item {
+    margin-bottom: 30px;
+    text-align: left; /* Ensure service items are left-aligned */
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-item ul {
+    list-style: disc;
+    padding-left: 20px; /* Ensure list items are indented */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    clear: both;
+}
+
+
+/* Toggle menu */
+
+
+/* CSS for the service-item images */
+.service-item img {
+    width: 600px; /* Set the width to 200 pixels */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Keep the border radius */
+    display: block; /* Center the image */
+    margin: 0 auto 15px; /* Center the image and add bottom margin */
+}
+
+
+.about-us img {
+    width: 600px; /* Set the width to 200 pixels */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+}
